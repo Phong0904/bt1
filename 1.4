@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+struct toaDo{
+	int tungDo;
+	int hoanhDo;
+	int caoDo;
+};
+void nhaptoaDo(toaDo &l){
+	cout << " Nhap hoanh do va tung do va cao do: " << endl;
+	cin>> l.tungDo >> l.hoanhDo>>l.caoDo;
+}
+void xuattoaDo(toaDo l){
+	cout << "(" << l.tungDo << ";" << l.hoanhDo <<";" << l.caoDo<< ")" << endl;
+}
+int main(){
+	toaDo l;
+	nhaptoaDo(l);
+	xuattoaDo(l);
+	return 0;
+}
